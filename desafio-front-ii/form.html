@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- seetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <div></div>
+          <span>Camila Coelho</span>
+        </div>
+        <ul class="menu-list">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="curriculo.html">Currículo</a>
+          </li>
+          <li>
+            <a href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </header>
+      <main>
+        <h1>Contato</h1>
+
+        <div class="social-section">
+          <h2>Me encontre nas redes sociais:</h2>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/camilafbcoelho/"
+              class="social-link"
+            >
+              <img
+                src="./assets/linkedin-icon-svgrepo-com.svg"
+                alt="LinkedIn"
+              />
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/camilafbc" class="social-link">
+              <img src="./assets/github-svgrepo-com.svg" alt="GitHub" />
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="message-section">
+          <h3>ou envie uma mensagem:</h3>
+        </div>
+
+        <div class="form-container">
+          <form id="form">
+            <div class="form-item">
+              <label for="name">Nome:</label>
+              <input type="text" name="name" id="name" required />
+              <span id="nameMsg"></span>
+            </div>
+            <div class="form-item">
+              <label for="surname">Sobrenome:</label>
+              <input type="text" name="surname" id="surname" required />
+              <span id="surnameMsg"></span>
+            </div>
+            <div class="form-item">
+              <label for="age">Idade:</label>
+              <input
+                type="text"
+                inputmode="numeric"
+                pattern="\d*"
+                name="age"
+                id="age"
+                required
+              />
+              <span id="ageMsg"></span>
+            </div>
+            <div class="form-item">
+              <label for="email">E-mail:</label>
+              <input type="email" name="email" id="email" required />
+              <span id="emailMsg"></span>
+            </div>
+            <div class="form-item">
+              <label for="message">Escreva sua mensagem:</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="20"
+                required
+              ></textarea>
+              <span id="textMsg"></span>
+            </div>
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
