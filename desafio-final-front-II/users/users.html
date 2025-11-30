@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuários</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <img src="../assets/images/logoipsum-414.svg" alt="" srcset="" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../products/products.html">Produtos</a></li>
+            <li><a href="users.html">Usuários</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <main>
+        <div class="products-main">
+          <h1>Gerenciar Usuários</h1>
+          <button onclick="openAddUserModal()">Adicionar Novo</button>
+        </div>
+        <div id="users-container"></div>
+      </main>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="users.js"></script>
+  </body>
+</html>
